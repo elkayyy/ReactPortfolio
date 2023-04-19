@@ -1,0 +1,46 @@
+.social-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    width: 100%;
+    margin-top: 25%;
+ 
+  
+  }
+
+.social-box1{
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    
+}
+
+.social-box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 25%;
+    margin-top: 2%;
+    transition: all 0.3s;
+}
+
+.span-text {
+    color:beige;
+    font-size: 1.1rem;
+    font-family: monospace;
+}
+
+.social-item1, .social-item2, .social-item3, .social-item4 {
+    transition: all 0.3s;
+}
+
+.social-item1:hover, .social-item2:hover, .social-item3:hover, .social-item4:hover {
+    transform: scale(1.1);
+}
+
+
+
+

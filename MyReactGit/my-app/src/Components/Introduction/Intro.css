@@ -11,27 +11,25 @@
 }
 
 .intro-box2 {
-  color: white;
+  color: beige;
   width: 50%;
   height: 100%;
   margin-left: 10%;
   padding: 10px;
-  background-color: rgb(32, 32, 32);
-  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid #ffffff;
   animation: slide-out-right 1s forwards;
   --distance: 10px;
   animation-fill-mode: forwards;
 
 }
 
-.photo-button {
+button.photo-button {
   height: 100%;
   font-size:  2rem;
   background-color: rgb(32, 32, 32);
   color: beige;
   border: none;
   transition: all 0.3s;
-
 }
 
 .photos-container {
@@ -39,8 +37,6 @@
   right: 2rem;
   width: 35%;
   height: 100%;
-  background-color: rgb(32, 32, 32);
-
 }
 
 .intro-box1,
@@ -58,7 +54,7 @@
 .intro-box1-1 {animation: slide-out-right 1s forwards; --distance: 380px; background-image: url(/public/Images/Me/Me3.webp);}
 .intro-box1-2 {animation: slide-out-right 1s forwards; --distance: 15px; background-image: url(/public/Images/Me/Me2.webp);}
 
-h1 {color: beige;} h3 {font-weight: normal;}
+h1 {color: beige;} h2 {font-weight: normal;}
 
 .photo-button:hover {
   transform: scale(1.1);
@@ -80,18 +76,16 @@ h1 {color: beige;} h3 {font-weight: normal;}
   }
 }
 
+
 /* Intro container Done, next Skills container */
 
 .skills {
-  background-color: rgb(32, 32, 32);
   height: 20rem;
   position: relative;
   top: 10.3rem;
   display: flex;
   align-items: flex-start;
   gap: 1em;
-
- 
 }
 
 .skill-box {
@@ -99,8 +93,7 @@ h1 {color: beige;} h3 {font-weight: normal;}
   height: 100%;
   padding: 10px;
   margin-left: 10%;
-  background-color: rgb(32, 32, 32);
-  border-left: 1px solid beige;
+  border-left: 1px solid #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -109,20 +102,27 @@ h1 {color: beige;} h3 {font-weight: normal;}
   animation: slide-out-left 1s forwards;
   --distance: 10px;
   animation-fill-mode: forwards;
+  
 }
 
 
 
 .item-1, .item-2, .item-3, .item-4, .item-5 {
   color: white;
-  width: 500px;
-  height: 50px;
+  width: 300px;
+  height: 60px;
   font-size: 1.1rem;
-  
+  margin-left: 3%;
+}
+
+span {
+  margin-left: 2%;
 }
 
 .Skill-title{
   font-family: monospace;
+  font-size: 25px;
+  margin-left: 3%;
   margin-right: auto; /* Move the title to the end of the container */
 }
 
@@ -133,4 +133,24 @@ h1 {color: beige;} h3 {font-weight: normal;}
   to {
     transform: translateX(var(--distance, 0px));
   }
+}
+
+/* About me Section */
+
+.aboutme-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: beige;
+  height: 100%;
+  width: 35%;
+  animation: slide-out-left 1s forwards;
+  animation-fill-mode: forwards;
+}
+
+.aboutme-title {
+  text-align: center;
+  font-size: 1.1rem;
 }
