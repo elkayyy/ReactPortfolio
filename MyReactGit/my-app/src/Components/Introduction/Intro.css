@@ -1,13 +1,12 @@
 .intro {
   background-color: rgb(32, 32, 32);
-  height: 20rem;
+  height: 100%;
   width: 100%;
   position: relative;
   top: 10rem;
   display: flex;
   align-items: flex-start;
   gap: 1em;
- 
 }
 
 .intro-box2 {
@@ -18,10 +17,9 @@
   padding: 10px;
   border-right: 1px solid #ffffff;
 
-
 }
 
-.intro-box2-anim{
+.intro-box2-anim {
   animation: slide-out-right 1s forwards;
   --distance: 10px;
   animation-fill-mode: forwards;
@@ -29,9 +27,12 @@
 
 button.photo-button {
   height: 100%;
-  font-size:  2rem;
+  font-size: 2rem;
   background-color: rgb(32, 32, 32);
   color: beige;
+  position: absolute;
+  /* add absolute positioning to the button */
+  left: 61%;
   border: none;
   transition: all 0.3s;
 }
@@ -54,11 +55,31 @@ button.photo-button {
   background-position: center;
 }
 
-.intro-box1-anim {animation: slide-out-right 1s forwards; --distance: 200px; background-image: url(/public/Images/Me/me.webp);}
-.intro-box1-1-anim {animation: slide-out-right 1s forwards; --distance: 380px; background-image: url(/public/Images/Me/Me3.webp);}
-.intro-box1-2-anim {animation: slide-out-right 1s forwards; --distance: 15px; background-image: url(/public/Images/Me/Me2.webp);}
+.intro-box1-anim {
+  animation: slide-out-right 1s forwards;
+  --distance: 200px;
+  background-image: url(/public/Images/Me/me.webp);
+}
 
-h1 {color: beige;} h2 {font-weight: normal;}
+.intro-box1-1-anim {
+  animation: slide-out-right 1s forwards;
+  --distance: 380px;
+  background-image: url(/public/Images/Me/Me3.webp);
+}
+
+.intro-box1-2-anim {
+  animation: slide-out-right 1s forwards;
+  --distance: 15px;
+  background-image: url(/public/Images/Me/Me2.webp);
+}
+
+h1 {
+  color: beige;
+}
+
+h2 {
+  font-weight: normal;
+}
 
 .photo-button:hover {
   transform: scale(1.1);
@@ -68,18 +89,11 @@ h1 {color: beige;} h2 {font-weight: normal;}
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(var(--distance, 300px));
   }
 }
-
-@media (max-width: 768px) {
-  .intro .intro-box2 {
-    width: 80%;
-    left: 10%;
-  }
-}
-
 
 /* Intro container Done, next Skills container */
 
@@ -113,7 +127,11 @@ h1 {color: beige;} h2 {font-weight: normal;}
 
 
 
-.item-1, .item-2, .item-3, .item-4, .item-5 {
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
   color: white;
   width: 300px;
   height: 60px;
@@ -125,17 +143,19 @@ span {
   margin-left: 2%;
 }
 
-.Skill-title{
+.Skill-title {
   font-family: monospace;
   font-size: 25px;
   margin-left: 3%;
-  margin-right: auto; /* Move the title to the end of the container */
+  margin-right: auto;
+  /* Move the title to the end of the container */
 }
 
 @keyframes slide-out-left {
   from {
     transform: translateX(35px);
   }
+
   to {
     transform: translateX(var(--distance, 0px));
   }
@@ -152,7 +172,7 @@ span {
   color: beige;
   height: 100%;
   width: 35%;
- 
+
 }
 
 .aboutme-box-anim {
@@ -163,4 +183,80 @@ span {
 .aboutme-title {
   text-align: center;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 968px) {
+
+  /* Apply these styles when the screen width is 968px or less */
+  .intro-box2-anim {
+    animation: none;
+  }
+
+  .intro-box1-1 {
+    display: none;
+  }
+
+  .intro-box1-1-anim {
+    animation: none;
+  }
+
+  .intro-box1-2-anim {
+    animation: none;
+  }
+
+  .skill-box-anim {
+    animation: none;
+  }
+
+  .aboutme-box-anim {
+    animation: none;
+  }
+
+  button.photo-button {
+    display: none;
+
+  }
+
+  .photos-container {
+    display: none;
+  }
+
+  .intro {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 1rem;
+    left: 15%;
+    font-size: clamp(10px, 1.7vw, 20px);
+  }
+
+  .intro-box2 {
+    border-right: none;
+    border-bottom: 1px solid beige;
+    height: 100%;
+  }
+
+  .skills {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 2rem;
+    left: 15%;
+
+  }
+
+  .skill-box {
+    border-left: none;
+  }
+
+  .aboutme-box {
+    position: relative;
+    height: 50%;
+    width: 100%;
+  }
+
 }
