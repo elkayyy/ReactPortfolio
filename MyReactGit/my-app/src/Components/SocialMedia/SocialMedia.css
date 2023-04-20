@@ -5,19 +5,33 @@
     height: 30rem;
     width: 100%;
     margin-top: 25%;
- 
-  
-  }
+}
 
-.social-box1{
+.social-main-anim {
+    animation: slide-up 1s forwards;
+    --distance: 25px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(var(--distance, 100px));
+    }
+}
+
+.social-box1 {
     width: 25%;
     height: 50%;
     text-align: center;
     border-top: 1px solid rgb(255, 255, 255);
-    
+
 }
 
-.social-box2{
+.social-box2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -28,19 +42,21 @@
 }
 
 .span-text {
-    color:beige;
+    color: beige;
     font-size: 1.1rem;
     font-family: monospace;
 }
 
-.social-item1, .social-item2, .social-item3, .social-item4 {
+.social-item1,
+.social-item2,
+.social-item3,
+.social-item4 {
     transition: all 0.3s;
 }
 
-.social-item1:hover, .social-item2:hover, .social-item3:hover, .social-item4:hover {
+.social-item1:hover,
+.social-item2:hover,
+.social-item3:hover,
+.social-item4:hover {
     transform: scale(1.1);
 }
-
-
-
-

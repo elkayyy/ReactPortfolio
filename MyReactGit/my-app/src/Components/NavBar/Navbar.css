@@ -15,7 +15,9 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-   
+    font-size: 20px;
+    color: beige;
+    
 }
 
 .navbar li {
