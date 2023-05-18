@@ -12,16 +12,6 @@
     animation-fill-mode: forwards;
 }
 
-@keyframes slide-up {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(var(--distance, 100px));
-    }
-}
-
 .social-box1 {
     width: 25%;
     text-align: center;
