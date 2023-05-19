@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.58831284.css",
-    "main.js": "/static/js/main.1411de41.js",
-    "static/media/Me3.webp": "/static/media/Me3.ff895cf9fd199f228025.webp",
-    "static/media/Me2.webp": "/static/media/Me2.c3d7b52e65df51a86fe3.webp",
-    "static/media/me.webp": "/static/media/me.0f2995fc0df1c8b673c6.webp",
-    "index.html": "/index.html",
-    "main.58831284.css.map": "/static/css/main.58831284.css.map",
-    "main.1411de41.js.map": "/static/js/main.1411de41.js.map"
+    "main.css": "/elkayyy.github.io/ReactPortfolio/static/css/main.fc2afa80.css",
+    "main.js": "/elkayyy.github.io/ReactPortfolio/static/js/main.1411de41.js",
+    "static/media/Me3.webp": "/elkayyy.github.io/ReactPortfolio/static/media/Me3.ff895cf9fd199f228025.webp",
+    "static/media/Me2.webp": "/elkayyy.github.io/ReactPortfolio/static/media/Me2.c3d7b52e65df51a86fe3.webp",
+    "static/media/me.webp": "/elkayyy.github.io/ReactPortfolio/static/media/me.0f2995fc0df1c8b673c6.webp",
+    "index.html": "/elkayyy.github.io/ReactPortfolio/index.html",
+    "main.fc2afa80.css.map": "/elkayyy.github.io/ReactPortfolio/static/css/main.fc2afa80.css.map",
+    "main.1411de41.js.map": "/elkayyy.github.io/ReactPortfolio/static/js/main.1411de41.js.map"
   },
   "entrypoints": [
-    "static/css/main.58831284.css",
+    "static/css/main.fc2afa80.css",
     "static/js/main.1411de41.js"
   ]
 }
